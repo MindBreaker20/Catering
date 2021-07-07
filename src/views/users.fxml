@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" prefHeight="438.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Users">
+   <children>
+      <TableView fx:id="tableUser" layoutX="22.0" layoutY="63.0" prefHeight="374.0" prefWidth="534.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="106.39992904663086" text="id" />
+          <TableColumn fx:id="colFirstName" prefWidth="109.60003662109375" text="firstname" />
+          <TableColumn fx:id="colLastName" prefWidth="108.80006408691406" text="lastname" />
+            <TableColumn fx:id="colPhone" prefWidth="99.20001220703125" text="phone" />
+            <TableColumn fx:id="colPassword" prefWidth="115.20001220703125" text="password" />
+            <TableColumn prefWidth="75.199951171875" text="Edit" />
+        </columns>
+      </TableView>
+      <Text layoutX="22.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users" wrappingWidth="137.33672714233398">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="522.0" layoutY="14.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4158274081579697363-128%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="deleteUser" fitHeight="34.0" fitWidth="45.0" layoutX="466.0" layoutY="14.0" onMouseClicked="#deleteUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/14974663671582988848-128.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

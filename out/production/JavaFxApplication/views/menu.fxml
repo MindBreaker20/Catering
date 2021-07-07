@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" prefHeight="438.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Menu">
+   <children>
+      <Text layoutX="24.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" wrappingWidth="135.36016845703125">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="addButton" layoutX="449.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToAddDish" prefHeight="34.0" prefWidth="104.0" styleClass="panel3" stylesheets="@../css/styles.css" text="Add" />
+      <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="384.0" layoutY="15.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4158274081579697363-128%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="deleteDish" fitHeight="34.0" fitWidth="45.0" layoutX="330.0" layoutY="15.0" onMouseClicked="#deleteDish" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/14974663671582988848-128.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableDish" layoutX="24.0" layoutY="66.0" prefHeight="372.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="130.39992904663086" text="id" />
+            <TableColumn fx:id="colName" prefWidth="128.80006408691406" text="name" />
+            <TableColumn fx:id="colType" prefWidth="140.00006103515625" text="type" />
+            <TableColumn fx:id="colPrice" prefWidth="128.0" text="price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="SQLconnector">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../SQLconnector/SQLconnector" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../SQLconnector/SQLconnector" recursive="false" />
+  </library>
+</component>
